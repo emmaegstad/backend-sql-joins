@@ -5,9 +5,9 @@
 SELECT
 	title
 FROM
-	film
-INNER JOIN
 	inventory
+LEFT JOIN
+	film
 ON
 	film.film_id = inventory.film_id
 LEFT JOIN
